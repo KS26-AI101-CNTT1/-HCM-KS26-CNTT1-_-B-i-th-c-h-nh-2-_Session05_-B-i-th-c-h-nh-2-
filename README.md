@@ -60,8 +60,6 @@ Prompt 1: Nghiên cứu đối tượng & Khai thác nỗi đau (Pain Points)
 
 Mục tiêu: Xác định đúng tệp khách hàng B2B và các vấn đề cốt lõi để làm chất liệu cho bài PR. [1]
 
-text
-
 Bạn là một Chuyên gia Nghiên cứu Thị trường và Chiến lược Nội dung B2B. 
 
 Nhiệm vụ của bạn là phân tích khách hàng mục tiêu cho một bài viết PR giới thiệu giải pháp "AI Chatbot thế hệ mới dành cho doanh nghiệp" (tự động hóa chăm sóc khách hàng, chốt đơn và tích hợp CRM).
@@ -96,17 +94,9 @@ Prompt 2: Thiết lập dàn ý bài PR chuẩn SEO (Outline)
 
 Mục tiêu: Kế thừa toàn bộ dữ liệu từ Bước 1 để dựng khung xương bài viết dài 1000 - 1500 từ, khóa chặt cấu trúc và giọng điệu.
 
-text
-
 Bạn là một Biên tập viên Nội dung PR Công nghệ (Tech PR Editor).
 
 Dựa trên dữ liệu nghiên cứu khách hàng dưới đây:
-
-<INPUT_DATA>
-
-[Dán toàn bộ kết quả đầu ra từ Prompt 1 vào đây]
-
-</INPUT_DATA>
 
 Hãy lập một dàn ý chi tiết (Outline) cho bài viết PR dài khoảng 1000 - 1500 từ. Dàn ý phải bám sát các Pain Points ở trên và tuân thủ nghiêm ngặt cấu trúc sau:
 
@@ -136,17 +126,9 @@ Prompt 3: Triển khai viết bài chi tiết & Tối ưu SEO
 
 Mục tiêu: Viết nội dung hoàn chỉnh dựa trên dàn ý Bước 2, giữ nguyên văn phong từ đầu đến cuối.
 
-text
-
 Bạn là một Chuyên gia Copywriter mảng Công nghệ B2B.
 
 Hãy viết bài PR hoàn chỉnh (độ dài mục tiêu: 1000 - 1500 từ) dựa trên dàn ý chi tiết dưới đây:
-
-<OUTLINE_DATA>
-
-[Dán toàn bộ kết quả đầu ra từ Prompt 2 vào đây]
-
-</OUTLINE_DATA>
 
 Quy tắc thực thi bắt buộc:
 
@@ -165,8 +147,6 @@ Cơ chế xử lý đứt gãy ngữ cảnh (Anti-Truncation Protocol)
 Khi AI viết bài dài (trên 1000 từ) và bị dừng đột ngột giữa chừng do chạm giới hạn token đầu ra (max output tokens), bạn không được gõ các lệnh chung chung như "viết tiếp đi" (dễ làm AI viết lặp lại ý hoặc đổi giọng văn).
 
 Hãy sử dụng Prompt điều khiển tiếp tục dưới đây:
-
-text
 
 Quá trình tạo văn bản vừa bị ngắt quãng do giới hạn độ dài. Hãy tiếp tục viết phần còn lại của bài PR dựa trên <OUTLINE_DATA> đã cung cấp.
 
